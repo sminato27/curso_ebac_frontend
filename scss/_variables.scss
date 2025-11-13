@@ -1,0 +1,29 @@
+// Vars
+$font-family-base: Roboto, sans-serif;
+
+// Cores
+$color-body-bg: #f5f6fa;
+$color-header-bg: #182C61;
+$color-white: #fff;
+$color-button: #44bd32;
+$color-button-hover: #4cd137;
+
+// Layout
+$container-max-width: 1024px;
+$container-padding-y: 16px;
+$section-padding-y: 56px;
+$radius-md: 16px;
+$radius-sm: 8px;
+
+// Grid
+$grid-3-col: 32.66%;
+$grid-2-col: 48.5%;
+$grid-col-gap-desktop: 1%;
+$grid-col-gap-tablet: 3%;
+$grid-row-gap: 4%;
+
+// Breakpoints
+$breakpoints: (
+  tablet: 1023px,
+  mobile: 767px
+);

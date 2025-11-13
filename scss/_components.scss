@@ -1,0 +1,32 @@
+@use 'variables' as v;
+
+.products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, v.$grid-3-col);
+  column-gap: v.$grid-col-gap-desktop;
+  row-gap: v.$grid-row-gap;
+  width: 100%;
+}
+
+.product-item {
+  img {
+    width: 100%;
+    border-radius: v.$radius-md;
+  }
+}
+
+.product-button {
+  display: block;
+  background-color: v.$color-button;
+  color: v.$color-white;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: v.$radius-sm;
+  margin-top: 8px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: v.$color-button-hover;
+  }
+}

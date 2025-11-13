@@ -1,0 +1,18 @@
+@use 'variables' as v;
+
+@mixin container {
+  max-width: v.$container-max-width;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin respond-to($breakpoint) {
+  $value: map-get(v.$breakpoints, $breakpoint);
+  @if $value {
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn 'Unknown breakpoint: #{$breakpoint}';
+  }
+}
