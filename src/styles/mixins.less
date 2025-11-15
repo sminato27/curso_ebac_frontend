@@ -1,0 +1,22 @@
+.container-base() {
+  max-width: @container-max;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button-base(@bg, @color: @color-white, @radius: 8px) {
+  display: block;
+  background-color: @bg;
+  color: @color;
+  text-align: center;
+  padding: @sp-1 0;
+  border-radius: @radius;
+  margin-top: @sp-1;
+  text-decoration: none;
+}
+
+.mq(@point, @rules) {
+  @media screen and (max-width: @breakpoints[@point]) {
+    @rules();
+  }
+}

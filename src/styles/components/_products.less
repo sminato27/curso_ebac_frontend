@@ -1,0 +1,40 @@
+.products {
+  margin-top: @sp-5;
+  display: grid;
+  grid-template-columns: @product-grid[desktop-cols];
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+
+.product-item {
+  img {
+    width: 100%;
+    border-radius: 16px;
+  }
+}
+
+.product-button {
+  .button-base(@color-success);
+
+  &:hover {
+    background-color: @color-success-hover;
+  }
+}
+
+@media screen and (max-width: @breakpoints[md]) {
+  .products {
+    grid-template-columns: @product-grid[tablet-cols];
+    column-gap: 3%;
+  }
+}
+
+@media screen and (max-width: @breakpoints[sm]) {
+  .products {
+    display: block;
+  }
+
+  .product-item {
+    margin-bottom: @sp-4;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "curso_ebac_frontend",
+  "version": "1.0.0",
+  "description": "Respositório criado para realização do curso de Front End da EBAC.",
+  "main": "index.js",
+  "scripts": {
+    "less": "less-watch-compiler ./src/styles ./build/styles main.less",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sminato27/curso_ebac_frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sminato27/curso_ebac_frontend/issues"
+  },
+  "homepage": "https://github.com/sminato27/curso_ebac_frontend#readme"
+}

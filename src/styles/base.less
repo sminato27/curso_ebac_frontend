@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: @font-base;
+}
+
+body {
+  background-color: @color-bg;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  .container-base();
+}
+
+section {
+  padding: @sp-6 0;
+}
+
+@media screen and (max-width: @breakpoints[md]) {
+  .container {
+    max-width: 80%;
+  }
+}
