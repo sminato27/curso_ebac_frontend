@@ -1,0 +1,14 @@
+{
+  "name": "exercicio_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open"
+  },
+  "private": true,
+  "devDependencies": {
+    "cypress": "^15.9.0"
+  }
+}
